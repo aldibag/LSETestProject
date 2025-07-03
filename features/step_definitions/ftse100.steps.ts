@@ -169,7 +169,8 @@ When('I extract the average index value for each month', { timeout: 30000 }, asy
             labels.push(label);
         }
     }
-
+    
+    // It helps find the smallest price in our loop below.
     let lowestPrice = Number.POSITIVE_INFINITY;
     let lowestLabel = '';
 
@@ -343,6 +344,9 @@ Then('I display the list of these constituents', async function () {
     await browser.close();
 });
 
+/**
+ * This step displays the lowest index found on the chart and its date.
+ */
 Then('I see the lowest index value printed with its date printed.', async function () {
     // Retrieve the lowestLabel value that we stored earlier in the "When" step.
     const lowestLabel: string = this.lowestLabel;
