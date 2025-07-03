@@ -1,22 +1,17 @@
 # FTSE 100 Scraper Automation
 
-This project automates the London Stock Exchange FTSE 100 index page using **Playwright** and **Cucumber.js** (BDD).  
-
-✅ It scrapes data points from the interactive chart and identifies the **lowest FTSE 100 index value** plotted in the chart.
-
 ---
 
-## 🚀 Features
+## 🚀 Covers the following scenarios: 
 
-- Automated browser navigation with Playwright
-- BDD scenarios written with Cucumber
-- Extraction of data from Highcharts SVG paths
-- Dynamic scraping of:
-  - index values
-  - corresponding dates
-- TypeScript support
+Test Scenario 1. Navigate to the London Stock Exchange website: https://www.londonstockexchange.com/.
 
+2. Write a test to Identify, extract, and display somewhere of choice the FTSE 100’s latest top 10 constituents with the highest percentage change.
+
+3. Write a test Identify, extract, and display somewhere of choice the FTSE 100’s latest top 10 constituents with the lowest percentage change.
+
+4. Write a test to Identify, extract, and display somewhere of choice all FTSE 100 constituents where the ‘Market Cap’ exceeds 7 million.
+
+5. Write a test to determine which month over the past three years recorded the lowest average index value.
 ---
-
-## 📂 Project Structure
 
